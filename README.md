@@ -2,7 +2,7 @@ The content below is an example project proposal / requirements document. Replac
 
 (__TODO__: your project name)
 
-# Shoppy Shoperson 
+# VibeCheck 
 
 ## Overview
 
