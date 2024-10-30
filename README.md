@@ -70,6 +70,8 @@ An Example Friend with Embedded Interactions:
 
 (__TODO__: create a first draft of your Schemas in db.mjs and link to it)
 
+The schema definitions can be viewed in [`db.mjs`](./db.mjs)
+
 ## Wireframes
 
 (__TODO__: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc.)
