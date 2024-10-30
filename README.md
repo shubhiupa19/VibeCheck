@@ -8,19 +8,20 @@ The content below is an example project proposal / requirements document. Replac
 
 (__TODO__: a brief one or two paragraph, high-level description of your project)
 
-Remembering what to buy at the grocery store is waaaaay too difficult. Also, shopping for groceries when you're hungry leads to regrettable purchases. Sooo... that's where Shoppy Shoperson comes in!
+Creating meaningful relationships, especially in a big city like New York, where one can have interactions with several people each day, is difficult. It's hard to remember specific nuances about each friend, and how each hangout made you feel. That's where VibeCheck comes in!
 
-Shoppy Shoperson is a web app that will allow users to keep track of multiple grocery lists. Users can register and login. Once they're logged in, they can create or view their grocery list. For every list that they have, they can add items to the list or cross off items.
+VibeCheck is a web app that will allow users to record interactions with friends, reflect on hangouts, and track important details to assess their relationships. They will be able to sign up and login to view all of their friends or create new ones. For every friend they have, they will be able to add a hangout, new detail they learned about their friend, and record how the interaction made them feel. 
 
+VibeCheck will facilitate the process of making intentional connections by helping users stay mindful of their relationships and the people they choose to spend time with. 
 
 ## Data Model
 
 (__TODO__: a description of your application's data and their relationships to each other) 
 
-The application will store Users, Lists and Items
+The application will store Users, Friends, and Interactions
 
-* users can have multiple lists (via references)
-* each list can have multiple items (by embedding)
+* users can have multiple friends (via references)
+* each friend can have multiple interactions (by embedding)
 
 (__TODO__: sample documents)
 
@@ -28,21 +29,37 @@ An Example User:
 
 ```javascript
 {
-  username: "shannonshopper",
+  username: "shubhi_upadhyay",
   hash: // a password hash,
-  lists: // an array of references to List documents
+  lists: // an array of references to Friend documents
 }
 ```
 
-An Example List with Embedded Items:
+An Example Friend with Embedded Interactions:
 
 ```javascript
 {
   user: // a reference to a User object
-  name: "Breakfast foods",
-  items: [
-    { name: "pancakes", quantity: "9876", checked: false},
-    { name: "ramen", quantity: "2", checked: true},
+  name: "Alex",
+  about: [ "Met in College", "Studied Math", "Interested in Running", "Is From Philadelphia" ]
+  interactions: [
+  {
+    date: "2024-10-26",
+    activity: "Exploring Central Park",
+    newDetail: "Interested in Running",
+    reflection: "Enjoyable, had good conversation",
+    rating: 5
+
+  },
+   {
+    date: "2024-10-10",
+    activity: "Getting Pizza",
+    newDetail: "Is From Philadelphia",
+    reflection: "Enjoyable, had good conversation",
+    rating: 5
+
+  },
+
   ],
   createdAt: // timestamp
 }
