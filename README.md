@@ -109,6 +109,15 @@ Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia
 
 (__TODO__: the research topics that you're planning on working on along with their point values... and the total points of research topics listed)
 
+
+* (3 points) Unit Testing with Javascript
+    * Unit testing is a manner of testing your code by testing each smallest possible unit of code at a time. This typically refers to functions, so unit testing enables the testing of individual functions. It is used to ensure that individual pieces of code work in isolation, so it helps pinpoint errors because a developer can look at which tests are failing to determine where the code may be buggy. Possible frameworks I could use would be Jest and Mocha, although I'm definitely leaning towards Jest because it has more features, specifically mocking, which will be helpful in testing aspects like adding to / modifying a database. I plan to use Jest to test essential functions in my app, such as logging in / registration, adding a friend, and adding an interaction with a friend.
+
+* (2 points) Using a CSS Framework with Customization
+   * CSS Frameworks are libraries with pre-defined styles and components, such as buttons and nav bars. These make the life of a developer easier by simplifying the process of creating consistent, cohesive, and responsive web pages. Using a CSS framework thus expedites the process of designing a web page, which allows the developer to focus more on the functionality of the web app rather than its appearance. Personally, I'm leaning more towards using Bootstrap rather than Tailwind CSS although both are very popular CSS frameworks. This is just because I've used Tailwind in the past and don't enjoy it, so I wanted to try something new. I plan to customize Boostrap's styles to configure a theme by overriding colors, changing typographies, and adjusting the properties of elements like buttons, navbars, and cards. 
+ 
+
+
 * (5 points) Integrate user authentication
     * I'm going to be using passport for user authentication
     * And account has been made for testing; I'll email you the password
