@@ -86,7 +86,10 @@ The schema definitions can be viewed in [`db.mjs`](./db.mjs)
 
 /friend/interaction-slug - page for adding / editing an interaction
 
-![edit-interaction](documentation/Edit Interaction Page.png)
+![edit-interaction](documentation/Edit_Interaction_Page.png)
+
+/friend/details-slug - page for viewing a friend's details
+![friend-details](documentation/Friend_Details.png)
 
 ## Site map
 
