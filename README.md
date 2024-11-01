@@ -76,17 +76,17 @@ The schema definitions can be viewed in [`db.mjs`](./db.mjs)
 
 (__TODO__: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc.)
 
-/list/create - page for creating a new shopping list
+/dashboard - page for viewing a user's friends / recent interactions in a dashboard format
 
-![list create](documentation/list-create.png)
+![dashboard](documentation/Dashboard.png)
 
-/list - page for showing all shopping lists
+/friend - page for adding / editing a friend
 
-![list](documentation/list.png)
+![edit-friend](documentation/Edit Friend Page.png)
 
-/list/slug - page for showing specific shopping list
+/friend/interaction-slug - page for adding / editing an interaction
 
-![list](documentation/list-slug.png)
+![edit-interaction](documentation/Edit Interaction Page.png)
 
 ## Site map
 
