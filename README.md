@@ -97,6 +97,8 @@ The schema definitions can be viewed in [`db.mjs`](./db.mjs)
 
 Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/20/Sitemap_google.jpg), but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
 
+[Site Diagram](documentation/site_diagram.png)
+
 ## User Stories or Use Cases
 
 (__TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://en.wikipedia.org/wiki/Use_case))
