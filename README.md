@@ -116,27 +116,15 @@ Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia
 * (2 points) Using a CSS Framework with Customization
    * CSS Frameworks are libraries with pre-defined styles and components, such as buttons and nav bars. These make the life of a developer easier by simplifying the process of creating consistent, cohesive, and responsive web pages. Using a CSS framework thus expedites the process of designing a web page, which allows the developer to focus more on the functionality of the web app rather than its appearance. Personally, I'm leaning more towards using Bootstrap rather than Tailwind CSS although both are very popular CSS frameworks. This is just because I've used Tailwind in the past and don't enjoy it, so I wanted to try something new. I plan to customize Boostrap's styles to configure a theme by overriding colors, changing typographies, and adjusting the properties of elements like buttons, navbars, and cards.
  
-* (2 points) Using a Client-Side JavaScript library - Chart.js
-   * Chart.js is a Javascript library that provides several pre-defined yet customizable charts such as bar charts and line graphs, enabling the user to visualize data in an intuitive and visually appealing way. For my app specifically, I'm thinking of using it on each friend details page, so the user can see the trend of their moods after each interaction with the corresponding friend. I'm also thinking, in the future, to add it to the dashboard in a bar chart form, so the user can visualize which friends they hang out with most. I'm giving it two points because it will not only involve rendering the charts in multiple views but also consistently re-fetching data from the database each time a friend's details are edited or loaded.
+* (6 points) Using a Frontend Framework - React
+   * React is a Javascript library used to build out user interfaces; it facilitates the development processs of creating UIs by enabling developers to make reusable components, such as friend details pages and forms for creating and editing friends and interactions. This component-based workflow will be useful in creating modular and organized code but will also ensure that the app's appearance remains seamless from page to page. I'm assigning it 6 points because utilizing a front-end framework is a significant undertaking (although I have previous web dev experience), involving setting up the frontend project directory, creating components and pages, and integrating with the backend Express architecture.
  
 * (3 points) Using server-side Javascript modules - node-cron and nodemailer
   * After doing some researching, I've found a way that I can send automated email reminders to the user if it's been some time since they last interacted with a friend. node-cron is a task scheduler module in Javascript, that can be used to schedule a daily task that searches through the database of friends and finds their most recent interaction with the user. If the date of it is far in the past (say, more than 30 days), then the friend is added to a list. Then, nodemailer, a module that allows Node.js applications to send emails, is configured to send an email to the user with a suggestion for a friend from the list / entire list of friends to catch up with. I gave this three points because it involves multiple steps and two different modules, including setting up the daily task with node-cron, configuring nodemailer to send customized emails, and ensuring the task queries the database accurately and consistently.
 
  
 
-
-* (5 points) Integrate user authentication
-    * I'm going to be using passport for user authentication
-    * And account has been made for testing; I'll email you the password
-    * see <code>cs.nyu.edu/~jversoza/ait-final/register</code> for register page
-    * see <code>cs.nyu.edu/~jversoza/ait-final/login</code> for login page
-* (4 points) Perform client side form validation using a JavaScript library
-    * see <code>cs.nyu.edu/~jversoza/ait-final/my-form</code>
-    * if you put in a number that's greater than 5, an error message will appear in the dom
-* (5 points) vue.js
-    * used vue.js as the frontend framework; it's a challenging library to learn, so I've assigned it 5 points
-
-10 points total out of 8 required points (___TODO__: addtional points will __not__ count for extra credit)
+14 points total out of 10 required points (___TODO__: addtional points will __not__ count for extra credit)
 
 
 ## [Link to Initial Main Project File](app.mjs) 
@@ -147,6 +135,8 @@ Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia
 
 (__TODO__: list any tutorials/references/etc. that you've based your code off of)
 
-1. [passport.js authentication docs](http://passportjs.org/docs) - (add link to source code that was based on this)
-2. [tutorial on vue.js](https://vuejs.org/v2/guide/) - (add link to source code that was based on this)
+1. [React Docs](https://react.dev/) 
+2. [node-cron docs](https://www.npmjs.com/package/node-cron) 
+3. [nodemailer inf](https://nodemailer.com/)
+4. [jest docs](https://jestjs.io/docs/getting-started)
 
