@@ -82,7 +82,7 @@ The schema definitions can be viewed in [`db.mjs`](./db.mjs)
 
 /friend - page for adding / editing a friend
 
-![edit-friend](documentation/Edit Friend Page.png)
+![edit-friend](documentation/Edit_Friend_Page.png)
 
 /friend/interaction-slug - page for adding / editing an interaction
 
