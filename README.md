@@ -95,7 +95,6 @@ The schema definitions can be viewed in [`db.mjs`](./db.mjs)
 
 (__TODO__: draw out a site map that shows how pages are related to each other)
 
-Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/20/Sitemap_google.jpg), but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
 
 ![Site Diagram](documentation/site_diagram.png)
 
@@ -135,6 +134,7 @@ Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia
 ## [Link to Initial Main Project File](app.mjs) 
 
 (__TODO__: create a skeleton Express application with a package.json, app.mjs, views folder, etc. ... and link to your initial app.mjs)
+
 [Link to app.mjs](app.mjs)
 
 ## Annotations / References Used
