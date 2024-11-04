@@ -1,5 +1,9 @@
 import mongoose from 'mongoose';
 
+mongoose.connect(process.env.DSN)
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(error => console.error(error));
+
 
 const UserSchema = new mongoose.Schema({
     username: { type: String, required: true},
@@ -9,7 +13,7 @@ const UserSchema = new mongoose.Schema({
 });
 
 const FriendSchema = new mongoose.Schema({ 
-    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true},
+    // user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true},
     name: { type: String, required: true},
     about: [ { type: String }],
     interactions: [{ 
@@ -21,5 +25,9 @@ const FriendSchema = new mongoose.Schema({
     createdAt: { type: Date, default: Date.now }
 });
 
+// registering the models
 mongoose.model('User', UserSchema);
 mongoose.model('Friend', FriendSchema);
+
+// export the models
+
