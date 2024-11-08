@@ -30,6 +30,12 @@ const FriendForm = () => {
     }
     };
 
+    // for padding: https://v2.tailwindcss.com/docs/padding
+    // for margin: https://v2.tailwindcss.com/docs/margin
+    // for rounding: https://v2.tailwindcss.com/docs/border-radius
+    // for width stuff: https://v2.tailwindcss.com/docs/max-width
+
+
     return (
         <div className="flex items-center">
         <form onSubmit={handleSubmit} className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">

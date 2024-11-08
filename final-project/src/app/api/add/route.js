@@ -1,5 +1,7 @@
+// https://nextjs.org/docs/app/api-reference/functions/next-response
+
 import { NextResponse } from 'next/server';
-import Friend from '../../models/Friend';
+import Friend from '../../../models/Friend';
 import dbConnect from '../../../lib/dbConnect';
 
 
