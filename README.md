@@ -132,7 +132,7 @@ The schema definitions can be viewed in [`db.mjs`](./db.mjs)
 
 (__TODO__: create a skeleton Express application with a package.json, app.mjs, views folder, etc. ... and link to your initial app.mjs)
 
-[Link to app.mjs](app.mjs)
+[Link to app.mjs](/final-project/src/app/page.js)
 
 ## Annotations / References Used
 
