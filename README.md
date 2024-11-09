@@ -66,11 +66,11 @@ An Example Friend with Embedded Interactions:
 ```
 
 
-## [Link to Commented First Draft Schema](db.mjs) 
+## [Link to Commented First Draft Schema](models) 
 
 (__TODO__: create a first draft of your Schemas in db.mjs and link to it)
 
-The schema definitions can be viewed in [`db.mjs`](/final-project/src/models)
+The schema definitions can be viewed in [`/final-project/src/models`](/final-project/src/models)
 
 ## Wireframes
 
