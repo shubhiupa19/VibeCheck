@@ -117,10 +117,10 @@ The schema definitions can be viewed in [`/final-project/src/models`](/final-pro
 
  
 
-11 points total out of 10 required points (___TODO__: addtional points will __not__ count for extra credit)
+11 points total out of 10 required points
 
 
-## [Link to Initial Main Project File](app.mjs) 
+## [Link to Initial Main Project File] 
 
 
 [Link to main page - page.js](/final-project/src/app/page.js)
