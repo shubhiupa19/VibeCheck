@@ -34,3 +34,4 @@ URL to github that shows line of code where research topic(s) are used / impleme
 References 
 ---
 (TODO: if applicable, links to annotated lines of code in github repository that were based off of tutorials / articles / sample projects)
+I used the file structure, but not the code, from sample Next app with mongodb mongoose example in the deployment instructions, in order to see where to put my dbConnect connection file
