@@ -33,4 +33,4 @@ URL to github that shows line of code where research topic(s) are used / impleme
 
 References 
 ---
-I used the file structure, but not the code, from sample Next app with mongodb mongoose example in the deployment instructions, in order to see where to put my dbConnect connection file
+I used the file structure, but not the code, from sample Next app with mongodb mongoose example in the deployment instructions, in order to see where to put my dbConnect connection file. I also changed where my models were located becuase of this.
