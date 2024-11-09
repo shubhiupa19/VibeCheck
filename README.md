@@ -132,13 +132,14 @@ The schema definitions can be viewed in [`/final-project/src/models`](/final-pro
 
 (__TODO__: create a skeleton Express application with a package.json, app.mjs, views folder, etc. ... and link to your initial app.mjs)
 
-[Link to app.mjs](/final-project/src/app/page.js)
+[Link to main page - page.js](/final-project/src/app/page.js)
 
 ## Annotations / References Used
 
 (__TODO__: list any tutorials/references/etc. that you've based your code off of)
 
-1. [React Docs](https://react.dev/) 
+1. [Next Docs](https://nextjs.org/docs) 
 2. [node-cron docs](https://www.npmjs.com/package/node-cron) 
 3. [nodemailer inf](https://nodemailer.com/)
+4. [Tailwind CSS Docs](https://v2.tailwindcss.com/docs/padding)
 
