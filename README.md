@@ -70,7 +70,7 @@ An Example Friend with Embedded Interactions:
 
 (__TODO__: create a first draft of your Schemas in db.mjs and link to it)
 
-The schema definitions can be viewed in [`db.mjs`](./db.mjs)
+The schema definitions can be viewed in [`db.mjs`](/final-project/src/models)
 
 ## Wireframes
 
@@ -141,5 +141,4 @@ The schema definitions can be viewed in [`db.mjs`](./db.mjs)
 1. [React Docs](https://react.dev/) 
 2. [node-cron docs](https://www.npmjs.com/package/node-cron) 
 3. [nodemailer inf](https://nodemailer.com/)
-4. [jest docs](https://jestjs.io/docs/getting-started)
 
