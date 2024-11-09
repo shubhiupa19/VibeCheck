@@ -7,19 +7,25 @@ Repository Link
 
 Special Instructions for Using Form and / or Login
 ---
-(TODO: if your app requires special instructions to use or if your app requires authentication, add information here; otherwise, leave blank)
 
 URL for deployed site 
 ---
-(TODO: add url for your dpeloyed site; should be in this format http://linserv1.cims.nyu.edu:YOUR_PORT_NUMBER)
+[(TODO: add url for your dpeloyed site; should be in this format http://linserv1.cims.nyu.edu:YOUR_PORT_NUMBER)](http://linserv1.cims.nyu.edu:36503)
 
 URL for form 
 ---
-(TODO: add link to a functioning form)
+
+Form appears on home page
+
+[(TODO: add link to a functioning form)](http://linserv1.cims.nyu.edu:36503) 
+
 
 URL for form result
 ---
+
 (TODO: if applicable, add link to page that shows results of submitting form)
+
+Form fields reset to empty if the form has been submitted successfully
 
 URL to github that shows line of code where research topic(s) are used / implemented
 --- 
