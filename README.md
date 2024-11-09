@@ -25,8 +25,9 @@ An Example User:
 ```javascript
 {
   username: "shubhi_upadhyay",
-  hash: // a password hash,
-  lists: // an array of references to Friend documents
+  email: //email address
+  password: // a password hash,
+  friends: // an array of references to Friend documents
 }
 ```
 
@@ -42,7 +43,8 @@ An Example Friend with Embedded Interactions:
     activity: "Exploring Central Park",
     newDetail: "Interested in Running",
     reflection: "Enjoyable, had good conversation",
-    rating: 5
+    rating: 5,
+    emoji: ☺️
 
   },
    {
@@ -50,7 +52,8 @@ An Example Friend with Embedded Interactions:
     activity: "Getting Pizza",
     newDetail: "Is From Philadelphia",
     reflection: "Enjoyable, had good conversation",
-    rating: 5
+    rating: 5,
+    emoji: 🍕
 
   },
 
