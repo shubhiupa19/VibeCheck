@@ -3,12 +3,18 @@
 import { useState } from 'react';
 
 const FriendForm = () => {
+    // variables to store the name and about of the friend
     const [name, setName] = useState('');
     const [about, setAbout] = useState('');
 
+    // function to handle form submission
     const handleSubmit = async (e) => { 
+        // prevent the default form submission 
         e.preventDefault();
+        
         try {
+        // make a POST request to the server, and store the response in a variable called response
+        // post contains the name and about of the friend
         const response = await fetch('api/add', {
             method: 'POST',
             headers: {
@@ -16,14 +22,17 @@ const FriendForm = () => {
             },
             body: JSON.stringify({ name, about: about.split(',') }),
         });
+        // store the json data from the response in a variable called data
         const data = await response.json();
+        // if the response is successulf (based on status code), log the data and reset the name and about
         if (response.ok) {
             console.log(data);
             setName('');
             setAbout('');
         }
+        // if the response is not successful, give an error message
         else {
-            console.error(data);
+            console.error("Error with adding a friend");
         }
     } catch (error) {
         console.error(error);
