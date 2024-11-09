@@ -8,6 +8,7 @@ const FriendSchema = new mongoose.Schema({
         activity: { type: String, required: true},
         newDetail: { type: String },
         rating: { type: Number, min: 1, max: 5, required: true},
+        emoji: { type: String, default: '👍' },
     }],
     createdAt: { type: Date, default: Date.now },
 });
