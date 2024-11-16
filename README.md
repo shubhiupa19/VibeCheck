@@ -1,12 +1,9 @@
 The content below is an example project proposal / requirements document. Replace the text below the lines marked "__TODO__" with details specific to your project. Remove the "TODO" lines.
 
-(__TODO__: VibeCheck)
 
 # VibeCheck 
 
 ## Overview
-
-(__TODO__: a brief one or two paragraph, high-level description of your project)
 
 Creating meaningful relationships, especially in a big city like New York, where one can have interactions with several people each day, is difficult. It's hard to remember specific nuances about each friend, and how each hangout made you feel. That's where VibeCheck comes in!
 
@@ -16,22 +13,21 @@ VibeCheck will facilitate the process of making intentional connections by helpi
 
 ## Data Model
 
-(__TODO__: a description of your application's data and their relationships to each other) 
 
 The application will store Users, Friends, and Interactions
 
 * users can have multiple friends (via references)
 * each friend can have multiple interactions (by embedding)
 
-(__TODO__: sample documents)
 
 An Example User:
 
 ```javascript
 {
   username: "shubhi_upadhyay",
-  hash: // a password hash,
-  lists: // an array of references to Friend documents
+  email: //email address
+  password: // a password hash,
+  friends: // an array of references to Friend documents
 }
 ```
 
@@ -39,7 +35,6 @@ An Example Friend with Embedded Interactions:
 
 ```javascript
 {
-  user: // a reference to a User object
   name: "Alex",
   about: [ "Met in College", "Studied Math", "Interested in Running", "Is From Philadelphia" ]
   interactions: [
@@ -48,7 +43,8 @@ An Example Friend with Embedded Interactions:
     activity: "Exploring Central Park",
     newDetail: "Interested in Running",
     reflection: "Enjoyable, had good conversation",
-    rating: 5
+    rating: 5,
+    emoji: ☺️
 
   },
    {
@@ -56,7 +52,8 @@ An Example Friend with Embedded Interactions:
     activity: "Getting Pizza",
     newDetail: "Is From Philadelphia",
     reflection: "Enjoyable, had good conversation",
-    rating: 5
+    rating: 5,
+    emoji: 🍕
 
   },
 
@@ -68,13 +65,13 @@ An Example Friend with Embedded Interactions:
 
 ## [Link to Commented First Draft Schema](models) 
 
-(__TODO__: create a first draft of your Schemas in db.mjs and link to it)
+
 
 The schema definitions can be viewed in [`/final-project/src/models`](/final-project/src/models)
 
 ## Wireframes
 
-(__TODO__: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc.)
+
 
 /dashboard - page for viewing a user's friends / recent interactions in a dashboard format
 
@@ -93,14 +90,13 @@ The schema definitions can be viewed in [`/final-project/src/models`](/final-pro
 
 ## Site map
 
-(__TODO__: draw out a site map that shows how pages are related to each other)
+
 
 
 ![Site Diagram](documentation/site_diagram.png)
 
 ## User Stories or Use Cases
 
-(__TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://en.wikipedia.org/wiki/Use_case))
 
 1. As a user, I want to either log in or create an account on the site to access my recorded friends and interactions
 2. As a user, I want to add a new friend to my dashboard so I can record interactions with them
@@ -111,7 +107,6 @@ The schema definitions can be viewed in [`/final-project/src/models`](/final-pro
 
 ## Research Topics
 
-(__TODO__: the research topics that you're planning on working on along with their point values... and the total points of research topics listed)
 
 
 * (2 points) Using a CSS Framework with Customization
@@ -125,18 +120,16 @@ The schema definitions can be viewed in [`/final-project/src/models`](/final-pro
 
  
 
-11 points total out of 10 required points (___TODO__: addtional points will __not__ count for extra credit)
+11 points total out of 10 required points
 
 
-## [Link to Initial Main Project File](app.mjs) 
+## [Link to Initial Main Project File] 
 
-(__TODO__: create a skeleton Express application with a package.json, app.mjs, views folder, etc. ... and link to your initial app.mjs)
 
 [Link to main page - page.js](/final-project/src/app/page.js)
 
 ## Annotations / References Used
 
-(__TODO__: list any tutorials/references/etc. that you've based your code off of)
 
 1. [Next Docs](https://nextjs.org/docs) 
 2. [node-cron docs](https://www.npmjs.com/package/node-cron) 
