@@ -3,12 +3,26 @@
 import { NextResponse } from 'next/server';
 import Friend from '../../../models/Friend';
 import dbConnect from '../../../lib/dbConnect';
+import User from '../../../models/User';
+import jwt from 'jsonwebtoken';
 
 // function that is called when a POST request is made to the /api/add route
 
 export async function POST(request) {
     // first, connect to the database
     await dbConnect();
+
+    // get the token from the request headers
+    const auth = request.headers.get('Authorization');
+    if (!auth) {
+        return NextResponse.json({ message: "No token provided" }, { status: 401 });
+    }
+    let token;
+    if (auth.startsWith("Bearer ")) {
+        token = auth.split(" ")[1];
+    }
+    const decoded = jwt.verify(token, process.env.SECRET);
+    const userId = decoded.userId;
 
     // extract the name and about from the request body
     const { name, about } = await request.json();
@@ -17,6 +31,11 @@ export async function POST(request) {
         const friend = new Friend ({ name, about });
         // save the friend to the database
         await friend.save();
+
+        // link the friend to the user
+        const user = await User.findById(userId);
+        user.friends.push(friend._id);
+        await user.save();
 
         // using the NextResponse API helper, return the friend that was saved with a status of 201
         return NextResponse.json(friend, { status: 201 });

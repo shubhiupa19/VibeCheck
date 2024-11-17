@@ -11,6 +11,10 @@ const FriendForm = () => {
     const handleSubmit = async (e) => { 
         // prevent the default form submission 
         e.preventDefault();
+
+        // grab the user's token from local storage
+        const token = localStorage.getItem('token');
+       
         
         try {
         // make a POST request to the server, and store the response in a variable called response
@@ -19,9 +23,11 @@ const FriendForm = () => {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`,
             },
             body: JSON.stringify({ name, about: about.split(',') }),
         });
+        console.log("raw response: ", response);
         // store the json data from the response in a variable called data
         const data = await response.json();
         // if the response is successulf (based on status code), log the data and reset the name and about

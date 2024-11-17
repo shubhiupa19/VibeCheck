@@ -1,16 +1,21 @@
+// using bcrypt to hash the password, learned from this tutorial: https://clerk.com/blog/password-based-authentication-nextjs
 import dbConnect from '../../../lib/dbConnect';
 import User from '../../../models/User';
 import { NextResponse } from 'next/server';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
 
 export async function POST(request) { 
     await dbConnect();
     const { username, email, password } = await request.json();
     try {
-        const user = new User({ username, email, password, friends: [] });
+        const hash = await bcrypt.hash(password, 10);
+        const user = new User({ username, email, password: hash, friends: [] });
         await user.save();
-        return NextResponse.json(user, { status: 201 });
+        const token = jwt.sign({ username: user.username, userId: user._id }, process.env.SECRET, { expiresIn: '1d' });
+        return NextResponse.json( { message: "User created successfully!", token}, { status: 201 });
     } catch (error) {
         console.error(error);
-        return NextResponse.error("Error with saving a user", { status: 500 });
+        return NextResponse.json("Error with saving a user", { status: 500 });
     }
 }
