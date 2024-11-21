@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 import { NextResponse } from "next/server";
 import dbConnect from "../../../lib/dbConnect";
 import User from "../../../models/User";
+import Friend from "../../../models/Friend";
 
 export async function GET(request) {
   await dbConnect();
@@ -14,11 +15,9 @@ export async function GET(request) {
       if (auth.startsWith("Bearer ")) {
         token = auth.split(" ")[1];
       }
-      console.log(token);
       const decoded = jwt.verify(token, process.env.SECRET);
       const userId = decoded.userId;
       const user = await User.findById(userId).populate("friends");
-      console.log(user.username);
 
       if (!user) {
         return NextResponse.json(

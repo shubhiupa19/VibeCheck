@@ -40,7 +40,9 @@ const DashboardPage = () => {
       <ul>
         {friends.map((friend) => (
           <li key={friend._id}>
-            <h4>{friend.name}</h4>
+            <Link href={`/friend/${friend._id}`}>
+            <h4 className="hover:underline text-blue-500">{friend.name}</h4>
+            </Link>
           </li>
         ))}
       </ul>
