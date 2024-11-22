@@ -35,6 +35,8 @@ URL(s) to github repository with commits that show progress on research
 [JSON Web Tokens Frontend](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/ed2954e7eba6fc220e327873bbb339ac9f0282cf/final-project/src/app/login/page.js#L13C5-L33C5)  
 [JSON Web Tokens Backend](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/ed2954e7eba6fc220e327873bbb339ac9f0282cf/final-project/src/app/api/login/route.js#L17C12-L26C10)
 
+Additionally, entire project is in Next.js (one of my research topics) and all frontend pages contain Tailwind CSS (another one of my research topics)
+
 References 
 ---
 [Learned about Bcrypt.js from online tutorial, used two specific syntax lines for comparing passwords and salting passwords](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/33f83af37064aacdee615937536a1b0b26506612/final-project/src/app/api/login/route.js#L17C13-L17C73)
