@@ -10,7 +10,7 @@ export async function GET(_, { params }) {
     console.log("reached past the friend fetch");
     return NextResponse.json(friend);
   } catch (error) {
-    return NextResponse.error({
+    return NextResponse.json({
       status: 404,
       message: "Friend not found",
     });
