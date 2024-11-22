@@ -3,7 +3,7 @@ Milestone 03
 
 Repository Link
 ---
-[(Repo Link])](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19)
+(Repo Link)(https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19)
 
 URL for deployed site 
 ---[
