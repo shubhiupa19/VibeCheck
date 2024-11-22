@@ -1,14 +1,13 @@
 import dbConnect from "../../../../lib/dbConnect";
 import { NextResponse } from "next/server";
 import Friend from "../../../../models/Friend";
-export async function GET(request, { params }) {
+export async function GET(_, { params }) {
   await dbConnect();
-
+  console.log("reached the friend fetch");
   const { id } = await params;
   try {
-    console.log(id);
     const friend = await Friend.findById(id);
-    // console.log(friend.name);
+    console.log("reached past the friend fetch");
     return NextResponse.json(friend);
   } catch (error) {
     return NextResponse.error({
