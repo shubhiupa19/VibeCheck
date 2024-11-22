@@ -3,7 +3,7 @@ Milestone 03
 
 Repository Link
 ---
-(Repo Link)(https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19)
+([Repo Link])(https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19)
 
 URL for deployed site 
 ---[
@@ -11,7 +11,7 @@ URL for deployed site
 
 URL for form 1 (from previous milestone) 
 ---
-([Link to a functioning form)](http://linserv1.cims.nyu.edu:36503/add))
+([Link to a functioning form)](http://linserv1.cims.nyu.edu:36503/add)
 
 Special Instructions for Form 1
 ---
