@@ -77,7 +77,7 @@ The schema definitions can be viewed in [`/final-project/src/models`](/final-pro
 
 ![dashboard](documentation/Dashboard.png)
 
-/friend - page for adding / editing a friend
+/add - page for adding / editing a friend
 
 ![edit-friend](documentation/Edit_Friend_Page.png)
 
