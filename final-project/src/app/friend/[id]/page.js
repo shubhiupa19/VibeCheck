@@ -34,7 +34,8 @@ const FriendPage = () => {
 
   useEffect(() => {
     fetchFriend();
-  }),[];
+  }),
+    [];
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">
@@ -43,11 +44,11 @@ const FriendPage = () => {
       <ul>
         {friend.interactions
           ? friend.interactions.map((interaction) => (
-            <li>
-              <div key={interaction.date}>
-                <p>{interaction.date}</p>
-                <p>{interaction.activity}</p>
-              </div>
+              <li key={interaction.date}>
+                <div>
+                  <p>{interaction.date}</p>
+                  <p>{interaction.activity}</p>
+                </div>
               </li>
             ))
           : null}
