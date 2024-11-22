@@ -33,7 +33,7 @@ URL(s) to github repository with commits that show progress on research
 --- 
 (TODO: add link to github url that shows line or lines of code that demonstrate continued progress on research topics)   
 [JSON Web Tokens Frontend](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/ed2954e7eba6fc220e327873bbb339ac9f0282cf/final-project/src/app/login/page.js#L13C5-L33C5)  
-[JSON Web Tokens Backend]((https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/ed2954e7eba6fc220e327873bbb339ac9f0282cf/final-project/src/app/api/login/route.js#L17C12-L26C10))
+[JSON Web Tokens Backend](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/ed2954e7eba6fc220e327873bbb339ac9f0282cf/final-project/src/app/api/login/route.js#L17C12-L26C10)
 
 References 
 ---
