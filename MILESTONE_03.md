@@ -37,4 +37,10 @@ URL(s) to github repository with commits that show progress on research
 
 References 
 ---
-(TODO: if applicable, links to annotated lines of code in github repository that were based off of tutorials / articles / sample projects)
+[Learned about Bcrypt.js from online tutorial, used two specific syntax lines for comparing passwords and salting passwords]([url](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/33f83af37064aacdee615937536a1b0b26506612/final-project/src/app/api/login/route.js#L17C13-L17C73))
+
+[Second line of code]([url](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/33f83af37064aacdee615937536a1b0b26506612/final-project/src/app/api/register/route.js#L12C9-L12C54))
+
+[Online Tutorial Link for bcrypt.js](https://clerk.com/blog/password-based-authentication-nextjs)
+
+
