@@ -1,10 +1,10 @@
 import dbConnect from "../../../../lib/dbConnect";
-import { NextResponse } from "next/server";
+import { NextApirequest, NextResponse } from "next/server";
 import Friend from "../../../../models/Friend";
-export async function GET(_, { params }) {
+export async function GET(req, { params }) {
   await dbConnect();
-  console.log("reached the friend fetch");
-  const { id } = await params;
+  // learned about how to use the params object from this link: https://nextjs.org/docs/app/building-your-application/routing/route-handlers#dynamic-route-segments
+  const id = (await params).id;
   try {
     const friend = await Friend.findById(id);
     console.log("reached past the friend fetch");
