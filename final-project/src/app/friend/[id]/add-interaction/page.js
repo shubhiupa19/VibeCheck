@@ -61,7 +61,7 @@ const AddInteractionPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">
-      <h1 className="text-2xl font-bold mb-4">Add Interaction for {friendName}!!</h1>
+      <h1 className="text-4xl font-bold mb-4">Add Interaction for {friendName}!!</h1>
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-md bg-white p-6 rounded border-2-black">
@@ -112,7 +112,7 @@ const AddInteractionPage = () => {
             onChange={(e) => setRating(e.target.value)}
             className="w-full appearance-none h-2 bg-gray-200 rounded-lg overflow-hidden border border-black"
           />
-          <div className="flex justify-between mt-2 text-sm text-gray-500">
+          <div className="flex justify-between mt-2 text-sm text-gray-700">
             <span>1</span>
             <span>3</span>
             <span>5</span>
