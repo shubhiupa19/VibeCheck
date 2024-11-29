@@ -7,7 +7,20 @@ export async function GET(req, { params }) {
   const id = (await params).id;
   try {
     const friend = await Friend.findById(id);
-    console.log("reached past the friend fetch");
+    if (!friend) {
+      return NextResponse.json(
+        { message: "Friend not found" },
+        { status: 404 }
+      );
+    }
+    if (!friend.interactions) {
+      friend.interactions = [];
+    } else {
+      friend.interactions = friend.interactions.map((interaction) => ({
+        ...interaction,
+        date: interaction.date || new Date().toISOString().split("T")[0],
+      }));
+    }
     return NextResponse.json(friend);
   } catch (error) {
     return NextResponse.json({
