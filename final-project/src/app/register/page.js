@@ -52,7 +52,7 @@ const RegisterPage = () => {
             <input type="password" id="password" className="w-full px-4 py-2 border border-gray-300 rounded-md" value={password} onChange={(e) => setPassword(e.target.value)}/>
             
         </div>
-            <button type="submit" className="w-full bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md">Register</button>
+            <button type="submit" className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md">Register</button>
         </form>
         </div>
     );
