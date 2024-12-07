@@ -115,15 +115,13 @@ The schema definitions can be viewed in [`/final-project/src/models`](/final-pro
 * (6 points) Using a Frontend Framework - Next
    * Next is a React-based Javascript library used to build out user interfaces; it facilitates the development process of creating UIs by enabling developers to make reusable components, such as friend details pages and forms for creating and editing friends and interactions. Additionally, the built-in routing system allows me to manage both frontend routes and API endpoints in the same directory, without requiring a separate backend framework like Express.  I'm assigning it 6 points because utilizing a front-end framework is a significant undertaking (although I have previous web dev experience), involving setting up the project structure, creating components, API endpoints and pages, and utilizing the appropriate syntax for connecting to MongoDB.
  
-* (3 points) Using server-side Javascript modules - node-cron and nodemailer
-  * After doing some researching, I've found a way that I can send automated email reminders to the user if it's been some time since they last interacted with a friend. node-cron is a task scheduler module in Javascript, that can be used to schedule a daily task that searches through the database of friends and finds their most recent interaction with the user. If the date of it is far in the past (say, more than 30 days), then the friend is added to a list. Then, nodemailer, a module that allows Node.js applications to send emails, is configured to send an email to the user with a suggestion for a friend from the list / entire list of friends to catch up with. I gave this three points because it involves multiple steps and two different modules, including setting up the daily task with node-cron, configuring nodemailer to send customized emails, and ensuring the task queries the database accurately and consistently.
 
 * (3 points) Using a server-side library - jswonwebtoken
   * I implemented JWT-based authentication in VibeCheck to validate whether a user was logged in before retrieving their list of friends. Essentially, the way it works is that when a user logs into or signs up in the app, the server-side code generates a JSON Web Token (containing info such as their userId in MongoDB)  and sends it to the client, which then stores it in localStorage. For future interactions between the client and server (that require authentication), the client sends the JWT in the HTTP Authorization request header. I implemented it to ensure that a user could only access their friends if they were logged in, and that a user's list of friends wouldn't be accessible to just anyone to accessed the web app. It's a pretty interesting technology.
 
  
 
-14 points total out of 10 required points
+11 points total out of 10 required points
 
 
 ## [Link to Initial Main Project File] 
