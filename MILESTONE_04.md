@@ -3,15 +3,15 @@ Milestone 04 - Final Project Documentation
 
 NetID
 ---
-(TODO: add your netid)
+su2132
 
 Name
 ---
-(TODO: add your first and last name)
+Shubhi Upadhyay
 
 Repository Link
 ---
-(TODO: add the link to your repository in github, such as, https://github.com/[COURSE]/[REPO_NAME])
+[(Link to Repo)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/)
 
 URL for deployed site 
 ---
