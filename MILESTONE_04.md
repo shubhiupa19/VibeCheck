@@ -11,35 +11,38 @@ Shubhi Upadhyay
 
 Repository Link
 ---
-[(Link to Repo)](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/)
+[Link to Repo](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/)
 
 URL for deployed site 
 ---
-(TODO: add url for your dpeloyed site; should be in this format http://linserv1.cims.nyu.edu:YOUR_PORT_NUMBER)
+[Link](http://linserv1.cims.nyu.edu:36503/)
 
 URL for form 1 (from previous milestone) 
 ---
-(TODO: add link to a functioning form)
+[Link to login/register (same as deployed site URL)](http://linserv1.cims.nyu.edu:36503/) -> on correct submission
 
-Special Instructions for Form 1
+Special Instructions for Form 1 (note ** the site has been loading extra slowly on 12/7/2024, for some reason, it still works - it just takes a few extra seconds!)
 ---
-(TODO: if your app requires special instructions to use or if your app requires authentication, add information here; otherwise, leave blank)
+To see tester information, you can login using the credentials:
+username: tester
+password: 1234
+You can also just create an account and proceed normally as well.
 
 URL for form 2 (for current milestone)
 ---
-(TODO: if applicable, add link to page that shows results of submitting form)
+[Second Form](http://linserv1.cims.nyu.edu:36503/add)
 
 Special Instructions for Form 2
 ---
-(TODO: if your app requires special instructions to use or if your app requires authentication, add information here; otherwise, leave blank)
+
 
 URL for form 3 (from previous milestone) 
 ---
-(TODO: add link to a functioning form)
+[Sample Friend Interaction Form](http://linserv1.cims.nyu.edu:36503/friend/673a80107ef8c4bf3e5b3b0b/add-interaction)
 
 Special Instructions for Form 3
 ---
-(TODO: if your app requires special instructions to use or if your app requires authentication, add information here; otherwise, leave blank)
+You must have already created a friend to add an interaction. In the example above, the form is creating an interaction for a friend named Alex.
 
 First link to github line number(s) for constructor, HOF, etc.
 ---
