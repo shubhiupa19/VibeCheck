@@ -2,9 +2,12 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { format } from "date-fns";
+import jwt from "jsonwebtoken";
+import { set } from "mongoose";
 const DashboardPage = () => {
   const [friends, setFriends] = useState([]);
   const [recentInteractions, setRecentInteractions] = useState([]);
+  const [username, setUsername] = useState("");
   const fetchFriends = async () => {
     try {
       const response = await fetch("/api/friends", {
@@ -46,14 +49,24 @@ const DashboardPage = () => {
     }
   }
 
+  const fetchUsername = () => {
+    const token = localStorage.getItem("token");
+    const decoded = jwt.decode(token);
+    const username = decoded.username;
+    console.log(username);
+    return username;
+  }
+
+  
 
   useEffect(() => {
     fetchFriends();
     fetchRecentInteractions();
+    setUsername(fetchUsername());
   }, []);
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">
-      <h1 className="text-5xl font-bold mb-5">Welcome to VibeCheck!</h1>
+      <h1 className="text-5xl font-bold mb-5">{`Welcome to VibeCheck, ${username}!`}</h1>
       <Link href="/add">
         <button className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded">
           {" "}
