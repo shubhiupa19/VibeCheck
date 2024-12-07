@@ -44,20 +44,21 @@ Special Instructions for Form 3
 ---
 You must already have logged in and created a friend to add an interaction. In the example above, the form is creating an interaction for a friend named Alex. 
 
-In this case, you must be logged into the above credentials to access the page to prevent accessing and editing other users' friend info. 
+In this case, you must be logged into the given login credentials to access the page to prevent accessing and editing other users' friend info. 
 
 First link to github line number(s) for constructor, HOF, etc.
 ---
-(TODO: add link to line number(s) here) 
+[Link](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/cdaeb58c0c58520beebb2f449cf7e82e50ef367f/final-project/src/app/friend/%5Bid%5D/page.js#L87-L110)
 
 Second link to github line number(s) for constructor, HOF, etc.
 ---
-(TODO: add link to line number(s) here) 
+[Link 2](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/cdaeb58c0c58520beebb2f449cf7e82e50ef367f/final-project/src/app/api/friends/%5Bid%5D/route.js#L19-L22)
 
 Short description for links above
 ---
-(TODO: describe what each link above is, one line each... for example: myFunction is a hof that retrieves json from a url, map is used to transform the Array of Person objects into an Array of strings that represents names)
-
+1) The first link is a higher order map function used for rendering each interaction with a friend in a `<span>` element with the data of the interaction. The callback takes in a single `interaction` as a parameter, and applies the same styling to each element of the `interactions` array. This is done using HTML and Tailwind CSS. The result is a more readable and understandable list of interactions displayed on the webpage. 
+2) The second link is also a higher order map function used for formatting the `date` property of each interaction with a friend in the `interactions array` on the server side. The callback function also takes in a single `interaction` as a parameter, and uses `date-fns` library to format its `date` property.
+   
 Link to github line number(s) for schemas (db.js or models folder)
 ---
 (TODO: add link to schemas)
