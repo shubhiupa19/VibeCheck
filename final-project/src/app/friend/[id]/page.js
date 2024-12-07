@@ -51,14 +51,14 @@ const FriendPage = () => {
     <div className="relative h-screen bg-white">
       <div className="absolute top-4 left-4">
         <Link href="/dashboard">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mt-2 ">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg mt-2 ">
             Back to Dashboard
           </button>
         </Link>
       </div>
       <div className="absolute top-4 right-4">
       <Link href={`/friend/${id}/add-interaction`}>
-          <button className="mb-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg">
+          <button className="mb-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg">
             Add Interaction
           </button>
         </Link>

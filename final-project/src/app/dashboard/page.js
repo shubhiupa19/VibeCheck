@@ -55,7 +55,7 @@ const DashboardPage = () => {
     <div className="flex flex-col items-center justify-center h-screen bg-white">
       <h1 className="text-5xl font-bold mb-5">Welcome to VibeCheck!</h1>
       <Link href="/add">
-        <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
+        <button className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded">
           {" "}
           Add Friend
         </button>
@@ -65,7 +65,7 @@ const DashboardPage = () => {
         {friends.map((friend) => (
           <li key={friend._id}>
             <Link href={`/friend/${friend._id}`}>
-            <h4 className="hover:underline text-blue-500">{friend.name}</h4>
+            <h4 className="hover:underline text-green-500">{friend.name}</h4>
             </Link>
           </li>
         ))}

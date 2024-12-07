@@ -142,7 +142,7 @@ const AddInteractionPage = () => {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg mt-2"
+          className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg mt-2"
         >
           Submit
         </button>

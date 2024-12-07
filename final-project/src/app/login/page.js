@@ -71,12 +71,12 @@ const LoginPage = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md"
+          className="w-full bg-green-500 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-md"
         >
           Login
         </button>
       </form>
-      <Link href="/register" className="text-blue-500 hover:text-blue-700 underline font-medium mt-4"> Not a user? Register here! </Link>
+      <Link href="/register" className="text-green-500 hover:text-green-700 underline font-medium mt-4"> Not a user? Register here! </Link>
     </div>
   );
 };
