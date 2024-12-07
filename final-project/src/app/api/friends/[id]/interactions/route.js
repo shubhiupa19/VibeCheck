@@ -23,6 +23,9 @@ export async function POST(req, { params }) {
   try {
     const friend = await Friend.findById(id);
     friend.interactions.push(interaction);
+    if (interaction.newDetail !== "") {
+      friend.about.push(interaction.newDetail);
+    }
     await friend.save();
     console.log(friend.name);
     const userInteraction = {
@@ -30,11 +33,9 @@ export async function POST(req, { params }) {
       friendName: friend.name,
       ...interaction,
     };
-    
+
     // the unshift keyword adds elements t othe beginning of an array, rather than the end
     user.recentInteractions.unshift(userInteraction);
-
-    
 
     // if the user has more than 5 interactions, pop the last one off the array
     if (user.recentInteractions.length > 5) {
