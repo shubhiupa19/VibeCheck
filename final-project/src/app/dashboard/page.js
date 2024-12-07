@@ -1,12 +1,13 @@
 "use client";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { format } from "date-fns";
 const DashboardPage = () => {
   const [friends, setFriends] = useState([]);
-
+  const [recentInteractions, setRecentInteractions] = useState([]);
   const fetchFriends = async () => {
     try {
-      const response = await fetch("api/friends", {
+      const response = await fetch("/api/friends", {
         method: "GET",
         headers: {
           'Authorization': `Bearer ${localStorage.getItem("token")}`,
@@ -24,8 +25,31 @@ const DashboardPage = () => {
     }
   };
 
+  const fetchRecentInteractions = async () => {
+    try {
+      const response = await fetch("/api/recentInteractions", {
+        method: "GET",
+        headers: {
+          'Authorization': `Bearer ${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+      if(response.ok){
+        setRecentInteractions(data);
+      }
+      else {
+        console.error("Error with fetching recent interactions");
+      }
+    } catch(error) {
+      console.error(error);
+    }
+  }
+
+
   useEffect(() => {
     fetchFriends();
+    fetchRecentInteractions();
   }, []);
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">
@@ -46,7 +70,14 @@ const DashboardPage = () => {
           </li>
         ))}
       </ul>
-      <h3 className="mt-4 text-xl">Recent Interactions</h3>
+      <h3 className="mt-4 text-xl mb-2">Recent Interactions</h3>
+      <ul className="list-disc">
+        {recentInteractions.map((interaction) => (
+          <li key={interaction._id}>
+            <h4>{`${interaction.activity} with ${interaction.friendName} on ${format(new Date(interaction.date), 'MMMM do, yyyy')}`}</h4>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

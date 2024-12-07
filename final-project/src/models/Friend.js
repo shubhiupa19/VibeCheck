@@ -4,7 +4,7 @@ const FriendSchema = new mongoose.Schema({
     name: { type: String, required: true },
     about: { type: [String], required: true },
     interactions: [{ 
-        date: { type: Date, required: true},
+        date: { type: Date, required: true, default: Date.now },
         activity: { type: String, required: true},
         newDetail: { type: String },
         rating: { type: Number, min: 1, max: 5, required: true},

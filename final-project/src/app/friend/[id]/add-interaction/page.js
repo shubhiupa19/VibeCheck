@@ -15,13 +15,21 @@ const AddInteractionPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const interaction = {
+      date: date || new Date().toISOString(),
+      activity: activity || "untitled",
+      newDetail: newDetail || "untitled",
+      rating: rating || 1,
+      emoji: emoji || "👍",
+    };
     try {
       const response = await fetch(`/api/friends/${id}/interactions`, {
         method: "POST",
         headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ date, activity, newDetail, rating, emoji }),
+        body: JSON.stringify(interaction ),
       });
       const data = await response.json();
       if (response.ok) {
@@ -61,10 +69,13 @@ const AddInteractionPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">
-      <h1 className="text-4xl font-bold mb-4">Add Interaction for {friendName}!!</h1>
+      <h1 className="text-4xl font-bold mb-4">
+        Add Interaction for {friendName}!!
+      </h1>
       <form
         onSubmit={handleSubmit}
-        className="w-full max-w-md bg-white p-6 rounded border-2-black">
+        className="w-full max-w-md bg-white p-6 rounded border-2-black"
+      >
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700">
             Date
