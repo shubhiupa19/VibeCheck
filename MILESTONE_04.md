@@ -67,7 +67,7 @@ Description of research topics above with points
 ---
 (2 points) Using a CSS Framework with Customization
 
-CSS Frameworks are libraries with pre-defined styles and components, such as buttons and nav bars. These make the life of a developer easier by simplifying the process of creating consistent, cohesive, and responsive web pages. Using a CSS framework thus expedites the process of designing a web page, which allows the developer to focus more on the functionality of the web app rather than its appearance. Personally, I'm leaning more towards Tailwind CSS because it easily integrates with Next.js, which I'm planning on using for my app. So far, it has been pretty easy to use and the docs are very well structured.
+CSS Frameworks are libraries with pre-defined styles and components, such as buttons and nav bars. These make the life of a developer easier by simplifying the process of creating consistent, cohesive, and responsive web pages. Using a CSS framework thus expedites the process of designing a web page, which allows the developer to focus more on the functionality of the web app rather than its appearance. Personally, I'm leaning more towards Tailwind CSS because it easily integrates with Next.js, which I'm planning on using for my app. So far, it has been pretty easy to use and the docs are very well structured. I have also customized Tailwind CSS by modifying the button and text colors as well as the app's font. 
 
 (6 points) Using a Frontend Framework - Next
 
@@ -75,13 +75,17 @@ Next is a React-based Javascript library used to build out user interfaces; it f
 
 (3 points) Using a server-side library - jsonwebtoken
 
-I implemented JWT-based authentication in VibeCheck to validate whether a user was logged in before retrieving their list of friends. Essentially, the way it works is that when a user logs into or signs up in the app, the server-side code generates a JSON Web Token (containing info such as their userId in MongoDB) and sends it to the client, which then stores it in localStorage. For future interactions between the client and server (that require authentication), the client sends the JWT in the HTTP Authorization request header. I implemented it to ensure that a user could only access their friends if they were logged in, and that a user's list of friends wouldn't be accessible to just anyone to accessed the web app. It's a pretty interesting technology.
+I implemented JWT-based authentication in VibeCheck to validate whether a user was logged in before retrieving their list of friends. Essentially, the way it works is that when a user logs into or signs up in the app, the server-side code generates a JSON Web Token (containing info such as their userId in MongoDB) and sends it to the client, which then stores it in localStorage. For future interactions between the client and server (that require authentication), the client sends the JWT in the HTTP Authorization request header. I implemented it to ensure that a user could only access their friends if they were logged in, and that a user's list of friends wouldn't be accessible to just anyone to access the web app. It's a pretty interesting technology.
 
-(2 points) Using JS libraries - date-fns and Chart.js
+(2 points) Using client side libraries - date-fns, Chart.js
 
-While not initially planned, I ended up using date-fns to lightly format the dates within the application to make them more readable, and also implement a chart using Chart.js for each friend; this way, the user can track their moods after interacting with the friend over time. These libraries were pretty easily to utilize and implement, so I assigned them two points. 
+While not initially planned, I ended up using date-fns to lightly format the dates within the application to make them more readable, and also implement a chart using Chart.js for each friend; this way, the user can track their moods after interacting with the friend over time. These libraries were intuitive to use and definitely enhanced the user experience 
 
-13 points total out of 10 required points
+(1 point) Using a server-side library - bcrypt
+On the server side, I used bcrypt to securely hash and compare the passwords and user inputs. This ensures that I wasn't storing any plaintext passwords in my database. It helped improve the security of my application. 
+
+
+14 points total out of 10 required points
 
 
 
@@ -97,9 +101,13 @@ Using a server-side library - jswonwebtoken
 [Client Sending Token](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/dashboard/page.js#L13-L17)
 [Server Verifying Token](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/api/friends/route.js#L9-L19)
 
- Using JS libraries - date-fns and Chart.js
+ Using client-side libraries - date-fns, Chart.js
  [date-fns example usage](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/dashboard/page.js#L90)
  [Chart.js](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/components/LineChart.js#L2-L69)
+
+ Using a server-side library - bcrypt
+ [bcrypt](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/32434dcc21c895f9b7676feb0e407bf30dcde385/final-project/src/app/api/login/route.js#L17)
+ 
 
 
 
