@@ -23,10 +23,10 @@ URL for form 1 (from previous milestone)
 
 Special Instructions for Form 1 (note ** the site has been loading extra slowly on 12/7/2024, for some reason, it still works - it just takes a few extra seconds!)
 ---
-To see tester information, you can login using the credentials:
-username: tester
-password: 1234
-You can also just create an account and proceed normally as well.
+To see tester information, you can login using the credentials:  
+username: tester  
+password: 1234  
+You can also just create an account and proceed normally as well.  
 
 URL for form 2 (for current milestone)
 ---
@@ -82,6 +82,7 @@ I implemented JWT-based authentication in VibeCheck to validate whether a user w
 While not initially planned, I ended up using date-fns to lightly format the dates within the application to make them more readable, and also implement a chart using Chart.js for each friend; this way, the user can track their moods after interacting with the friend over time. These libraries were intuitive to use and definitely enhanced the user experience 
 
 (1 point) Using a server-side library - bcrypt
+
 On the server side, I used bcrypt to securely hash and compare the passwords and user inputs. This ensures that I wasn't storing any plaintext passwords in my database. It helped improve the security of my application. 
 
 
