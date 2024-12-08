@@ -15,7 +15,7 @@ export async function POST(request) {
         const token = jwt.sign({ username: user.username, userId: user._id }, process.env.SECRET, { expiresIn: '1d' });
         return NextResponse.json( { message: "User created successfully!", token}, { status: 201 });
     } catch (error) {
-        console.error(error);
+        console.log(error);
         return NextResponse.json("Error with saving a user", { status: 500 });
     }
 }

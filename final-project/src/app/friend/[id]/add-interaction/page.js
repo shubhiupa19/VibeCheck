@@ -37,10 +37,10 @@ const AddInteractionPage = () => {
         console.log("Interaction added successfully!", data);
         router.push(`/friend/${id}`);
       } else {
-        console.error("Error with adding interaction");
+        console.log("Error with adding interaction");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
@@ -63,10 +63,10 @@ const AddInteractionPage = () => {
           const data = await response.json();
           setFriendName(data.name);
         } else {
-          console.error("Error with fetching friend");
+          console.log("Error with fetching friend");
         }
       } catch (error) {
-        console.error(error);
+        console.log(error);
       }
     };
     fetchFriend();

@@ -25,7 +25,7 @@ const DashboardPage = () => {
         console.log("Error with fetching friends");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 
@@ -45,7 +45,7 @@ const DashboardPage = () => {
         console.log("Error with fetching recent interactions");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 

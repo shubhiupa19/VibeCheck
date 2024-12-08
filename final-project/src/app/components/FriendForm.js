@@ -39,10 +39,10 @@ const FriendForm = () => {
       }
       // if the response is not successful, give an error message
       else {
-        console.error("Error with adding a friend");
+        console.log("Error with adding a friend");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 

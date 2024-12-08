@@ -20,7 +20,7 @@ export async function GET(req) {
       const recentInteractions = user?.recentInteractions || [];
       return NextResponse.json(recentInteractions);
     } catch (err) {
-      console.error(err);
+      console.log(err);
       return NextResponse.json(
         { message: "Error with fetching recent interactions" },
         { status: 500 }

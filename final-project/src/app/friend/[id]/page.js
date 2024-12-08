@@ -31,10 +31,10 @@ const FriendPage = () => {
         console.log("Friend fetched successfully!", data);
         setFriend(data);
       } else {
-        console.error("Error with fetching friend");
+        console.log("Error with fetching friend");
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
     }
   };
 

@@ -45,7 +45,7 @@ export async function POST(req, { params }) {
     console.log("successfully saved interaction");
     return NextResponse.json(friend, { status: 201 });
   } catch (err) {
-    console.error(err);
+    console.log(err);
     return NextResponse.json(
       { message: "Error with saving an interaction" },
       {

@@ -29,7 +29,7 @@ export async function POST(request) {
 
     } catch(error)
     {
-        console.error(error);
+        console.log(error);
         return NextResponse.error("Error with saving a user", { status: 500 });
     }
 

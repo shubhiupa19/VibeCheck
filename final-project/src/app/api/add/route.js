@@ -25,7 +25,7 @@ export async function POST(request) {
   try {
     decoded = jwt.verify(token, process.env.SECRET);
   } catch (error) {
-    console.error(error);
+    console.log(error);
     return NextResponse.json("Invalid token", { status: 401 });
   }
   const userId = decoded.userId;
@@ -47,7 +47,7 @@ export async function POST(request) {
     return NextResponse.json(friend, { status: 201 });
   } catch (error) {
     // if there is an error, log the error and return an error message with a status of 500, which is a server error
-    console.error(error);
+    console.log(error);
     return NextResponse.json("Error with saving a friend", { status: 500 });
   }
 }

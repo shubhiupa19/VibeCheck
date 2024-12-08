@@ -4,9 +4,10 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const LoginPage = () => {
-  const [email, setEmail] = useState("");
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
   const router = useRouter();
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -25,10 +26,12 @@ const LoginPage = () => {
             router.push('/dashboard');
         }
         else {
-            console.error("Error with logging in: ", data);
+            console.log("Error with logging in: ", data);
+            setError("Login Credentials are Invalid");
         }
     } catch (error) {
-        console.error(error);
+        console.log(error);
+        setError("Internal server error");
     }
     
   };
@@ -76,6 +79,13 @@ const LoginPage = () => {
           Login
         </button>
       </form>
+      {
+        error && (
+          <div className="text-red-500 font-medium mt-4">
+            {error}
+          </div>
+        )
+      }
       <Link href="/register" className="text-green-500 hover:text-green-700 underline font-medium mt-4"> Not a user? Register here! </Link>
     </div>
   );

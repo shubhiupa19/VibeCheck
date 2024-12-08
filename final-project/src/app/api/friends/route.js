@@ -3,6 +3,7 @@ import jwt from "jsonwebtoken";
 import { NextResponse } from "next/server";
 import dbConnect from "../../../lib/dbConnect";
 import User from "../../../models/User";
+import Friend from "../../../models/Friend";
 
 
 export async function GET(request) {
@@ -29,7 +30,7 @@ export async function GET(request) {
         return NextResponse.json(user.friends, { status: 200 });
       }
     } catch (error) {
-      console.error(error);
+      console.log(error);
       return NextResponse.json("Error with getting friends", { status: 500 });
     }
   }
