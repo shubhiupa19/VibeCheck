@@ -66,7 +66,7 @@ Short description for links above
    
 Link to github line number(s) for schemas (db.js or models folder)
 ---
-[Models folder](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/tree/master/final-project/src/models)
+[Models folder](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/tree/master/final-project/src/models) - **Friend.js contains an embedded interaction schema**
 
 Description of research topics above with points
 ---
