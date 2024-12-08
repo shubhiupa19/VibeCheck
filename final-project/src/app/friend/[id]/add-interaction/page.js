@@ -12,6 +12,7 @@ const AddInteractionPage = () => {
   const [rating, setRating] = useState(0);
   const [emoji, setEmoji] = useState("");
   const [friendName, setFriendName] = useState("");
+ 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,10 +27,10 @@ const AddInteractionPage = () => {
       const response = await fetch(`/api/friends/${id}/interactions`, {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          "Authorization": `Bearer ${localStorage.getItem("token")}`,
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(interaction ),
+        body: JSON.stringify(interaction),
       });
       const data = await response.json();
       if (response.ok) {
@@ -44,7 +45,12 @@ const AddInteractionPage = () => {
   };
 
   useEffect(() => {
+   
+    
     const fetchFriend = async () => {
+      if (!localStorage.getItem("token")) {
+        router.push("/login");
+      }
       try {
         const response = await fetch(`/api/friends/${id}`, {
           method: "GET",
@@ -66,6 +72,7 @@ const AddInteractionPage = () => {
     fetchFriend();
   }, [id]);
   // run only when the id changes
+
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-white">

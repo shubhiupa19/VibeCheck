@@ -1,8 +1,9 @@
+// followed parts of this tutorial: https://dev.to/husnain/how-to-use-jwt-authentication-in-nodejsnextjs-2pp0
 import jwt from "jsonwebtoken";
 import { NextResponse } from "next/server";
 import dbConnect from "../../../lib/dbConnect";
 import User from "../../../models/User";
-import Friend from "../../../models/Friend";
+
 
 export async function GET(request) {
   await dbConnect();

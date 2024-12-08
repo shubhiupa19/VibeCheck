@@ -1,5 +1,5 @@
 "use client";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { format } from "date-fns";
@@ -8,7 +8,7 @@ import LineChart from "@/app/components/LineChart";
 
 const FriendPage = () => {
   // instantiating the router object
-  // const router = useRouter();
+  const router = useRouter();
   // setting up the state for the friend object
   const [friend, setFriend] = useState({ interactions: [] });
 
@@ -39,6 +39,9 @@ const FriendPage = () => {
   };
 
   useEffect(() => {
+    if (!localStorage.getItem("token")) {
+      router.push("/login");
+    }
     fetchFriend();
   }, [id]);
 
@@ -57,7 +60,7 @@ const FriendPage = () => {
         </Link>
       </div>
       <div className="absolute top-4 right-4">
-      <Link href={`/friend/${id}/add-interaction`}>
+        <Link href={`/friend/${id}/add-interaction`}>
           <button className="mb-4 bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg">
             Add Interaction
           </button>
@@ -67,12 +70,8 @@ const FriendPage = () => {
         className="flex flex-col items-center justify-center bg-white"
         style={{ paddingTop: "8rem" }}
       >
-        
-        <h1 className="text-4xl font-bold text-gray-800 mt-4">
-          {friend.name}
-        </h1>
-       
-        
+        <h1 className="text-4xl font-bold text-gray-800 mt-4">{friend.name}</h1>
+
         <h4 className="text-lg text-gray-600 mb-6 italic">
           {/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray */}
           {Array.isArray(friend.about) && friend.about.length > 0 ? (
@@ -81,7 +80,7 @@ const FriendPage = () => {
             <span className="text-gray-500">No details available</span>
           )}
         </h4>
-        
+
         <ul className="w-full max-w-2xl space-y-4">
           {friend.interactions?.length > 0 ? (
             friend.interactions.map((interaction) => (
@@ -117,7 +116,6 @@ const FriendPage = () => {
         <div className="mt-8 w-full max-w-2xl">
           <LineChart ratings={data} dates={labels} />
         </div>
-        
       </div>
     </div>
   );

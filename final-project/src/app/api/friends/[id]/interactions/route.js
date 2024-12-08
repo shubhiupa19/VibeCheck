@@ -23,7 +23,7 @@ export async function POST(req, { params }) {
   try {
     const friend = await Friend.findById(id);
     friend.interactions.push(interaction);
-    if (interaction.newDetail !== "") {
+    if (interaction.newDetail !== "untitled") {
       friend.about.push(interaction.newDetail);
     }
     await friend.save();
