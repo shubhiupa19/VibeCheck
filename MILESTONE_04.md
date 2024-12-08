@@ -31,9 +31,9 @@ You can also just create an account and proceed normally as well.
 URL for form 2 (for current milestone)
 ---
 [Second Form](http://linserv1.cims.nyu.edu:36503/add)
-
  **:warning:you must be logged into an account to access this form:warning:**, this prevents just anyone from adding a friend. If not, you will be rerouted to the login page.
-.
+
+
 Special Instructions for Form 2
 ---
 
