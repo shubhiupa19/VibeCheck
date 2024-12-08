@@ -19,7 +19,7 @@ URL for deployed site
 
 URL for form 1 (from previous milestone) 
 ---
-[Link to login/register (same as deployed site URL)](http://linserv1.cims.nyu.edu:36503/)
+[Link to login /register form (same as deployed site URL)](http://linserv1.cims.nyu.edu:36503/)
 
 Special Instructions for Form 1 (note ** the site has been loading extra slowly on 12/7/2024, it still works - it just takes a few extra seconds!)
 ---
@@ -30,7 +30,7 @@ You can also just create an account and proceed normally as well.
 
 URL for form 2 (for current milestone)
 ---
-[Second Form](http://linserv1.cims.nyu.edu:36503/add)
+[Add Friend Form](http://linserv1.cims.nyu.edu:36503/add)
 
  **:warning:you must be logged into an account to access this form:warning:**, this prevents just anyone from adding a friend. If not, you will be rerouted to the login page.
 
@@ -41,7 +41,7 @@ Special Instructions for Form 2
 
 URL for form 3 (from previous milestone) 
 ---
-[Sample Friend Interaction Form](http://linserv1.cims.nyu.edu:36503/friend/673a80107ef8c4bf3e5b3b0b/add-interaction)
+[Sample Friend Add Interaction Form](http://linserv1.cims.nyu.edu:36503/friend/673a80107ef8c4bf3e5b3b0b/add-interaction)
 
 Special Instructions for Form 3
 ---
