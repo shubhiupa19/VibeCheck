@@ -32,8 +32,8 @@ URL for form 2 (for current milestone)
 ---
 [Second Form](http://linserv1.cims.nyu.edu:36503/add)
 
-You must be logged in.
-
+ **:warning:you must be logged into an account to access this form:warning:**, this prevents just anyone from adding a friend. If not, you will be rerouted to the login page.
+.
 Special Instructions for Form 2
 ---
 
@@ -47,6 +47,8 @@ Special Instructions for Form 3
 You must already have logged in and created a friend to add an interaction. In the example above, the form is creating an interaction for a friend named Alex. 
 
 In this case, **:warning:you must be logged into the tester login credentials above:warning:** to access the page; this prevents accessing and editing other users' friend info. 
+
+If not, you will be rerouted to the login page.
 
 First link to github line number(s) for constructor, HOF, etc.
 ---
