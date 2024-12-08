@@ -19,7 +19,7 @@ URL for deployed site
 
 URL for form 1 (from previous milestone) 
 ---
-[Link to login/register (same as deployed site URL)](http://linserv1.cims.nyu.edu:36503/) -> on correct submission
+[Link to login/register (same as deployed site URL)](http://linserv1.cims.nyu.edu:36503/)
 
 Special Instructions for Form 1 (note ** the site has been loading extra slowly on 12/7/2024, it still works - it just takes a few extra seconds!)
 ---
