@@ -32,6 +32,8 @@ URL for form 2 (for current milestone)
 ---
 [Second Form](http://linserv1.cims.nyu.edu:36503/add)
 
+You must be logged in.
+
 Special Instructions for Form 2
 ---
 
