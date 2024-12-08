@@ -99,11 +99,11 @@ Links to github line number(s) for research topics described above (one link per
 [Using a Frontend Framework - Next](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/master/final-project/src/app/dashboard/page.js) --> the entire app is written in Next.js, so I just linked the dashboard/landing page
 
 Using a server-side library - jswonwebtoken
-[Client Sending Token](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/dashboard/page.js#L13-L17)
+[Client Sending Token](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/dashboard/page.js#L13-L17),
 [Server Verifying Token](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/api/friends/route.js#L9-L19)
 
  Using client-side libraries - date-fns, Chart.js
- [date-fns example usage](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/dashboard/page.js#L90)
+ [date-fns example usage](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/dashboard/page.js#L90), 
  [Chart.js](https://github.com/nyu-csci-ua-0467-001-002-fall-2024/final-project-shubhiupa19/blob/edb704a0af6e299eca0805b4823f9c4cf8a4242b/final-project/src/app/components/LineChart.js#L2-L69)
 
  Using a server-side library - bcrypt
