@@ -44,7 +44,7 @@ Special Instructions for Form 3
 ---
 You must already have logged in and created a friend to add an interaction. In the example above, the form is creating an interaction for a friend named Alex. 
 
-In this case, you must be logged into the given login credentials to access the page to prevent accessing and editing other users' friend info. 
+In this case,**you must be logged into the tester login credentials above** to access the page; this prevents accessing and editing other users' friend info. 
 
 First link to github line number(s) for constructor, HOF, etc.
 ---
