@@ -102,35 +102,4 @@ The schema definitions can be viewed in [`/final-project/src/models`](/final-pro
 6. As a user, I want to access a friend's profile so I can see all of my past interactions with them along with moods after these interactions.
 7. As a user, I want to see a list of details I've learned about each friend so I can hone in on certain relationships at certain times.
 
-## Research Topics
-
-
-
-* (2 points) Using a CSS Framework with Customization
-   * CSS Frameworks are libraries with pre-defined styles and components, such as buttons and nav bars. These make the life of a developer easier by simplifying the process of creating consistent, cohesive, and responsive web pages. Using a CSS framework thus expedites the process of designing a web page, which allows the developer to focus more on the functionality of the web app rather than its appearance. Personally, I'm leaning more towards Tailwind CSS because it easily integrates with Next.js, which I'm planning on using for my app. So far, it has been pretty easy to use and the docs are very well structured. 
- 
-* (6 points) Using a Frontend Framework - Next
-   * Next is a React-based Javascript library used to build out user interfaces; it facilitates the development process of creating UIs by enabling developers to make reusable components, such as friend details pages and forms for creating and editing friends and interactions. Additionally, the built-in routing system allows me to manage both frontend routes and API endpoints in the same directory, without requiring a separate backend framework like Express.  I'm assigning it 6 points because utilizing a front-end framework is a significant undertaking (although I have previous web dev experience), involving setting up the project structure, creating components, API endpoints and pages, and utilizing the appropriate syntax for connecting to MongoDB.
- 
-
-* (3 points) Using a server-side library - jswonwebtoken
-  * I implemented JWT-based authentication in VibeCheck to validate whether a user was logged in before retrieving their list of friends. Essentially, the way it works is that when a user logs into or signs up in the app, the server-side code generates a JSON Web Token (containing info such as their userId in MongoDB)  and sends it to the client, which then stores it in localStorage. For future interactions between the client and server (that require authentication), the client sends the JWT in the HTTP Authorization request header. I implemented it to ensure that a user could only access their friends if they were logged in, and that a user's list of friends wouldn't be accessible to just anyone to accessed the web app. It's a pretty interesting technology.
-
- 
-
-11 points total out of 10 required points
-
-
-## [Link to Initial Main Project File] 
-
-
-[Link to main page - page.js](/final-project/src/app/page.js)
-
-## Annotations / References Used
-
-
-1. [Next Docs](https://nextjs.org/docs) 
-2. [node-cron docs](https://www.npmjs.com/package/node-cron) 
-3. [nodemailer inf](https://nodemailer.com/)
-4. [Tailwind CSS Docs](https://v2.tailwindcss.com/docs/padding)
 
